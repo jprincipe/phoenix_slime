@@ -18,10 +18,11 @@ defmodule PhoenixSlime.Mixfile do
   end
 
   def deps do
-    [{:phoenix, "~> 1.3"},
+    [{:phoenix, github: "phoenixframework/phoenix"},
      {:phoenix_html, "~> 2.10"},
-     {:cowboy, "~> 1.0"},
+     {:cowboy, "~> 2.5"},
      {:slime, "~> 1.0"},
+     {:jason, "~> 1.1"},
      {:ex_doc, ">= 0.0.0", only: :dev},
      {:earmark, ">= 0.0.0", only: :dev}]
   end
